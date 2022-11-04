@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    height: 10vh;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    box-shadow: 5px 5px 10px 3px rgb(150 150 150 / 0.4);
+    text-align: center;
+}
+
+.sabores{
+    display: none;
+    place-content: center;
+    text-align: center;
+    background-image: url('pastel.webp');
+    background-size: cover;
+    height: 90vh;
+    font-size: 1.8rem;
+}
+
+.__table{
+    width: calc(100vw - 40px);
+    height: calc(50vh - 40px);
+    margin: 20px;
+    background-color: rgb(255 255 255 / 0.6);
+    border-radius: 18px;
+    box-shadow: 3px 3px 10px 3px rgb(90 90 90 / 0.6);
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.adornos{
+    display: none;
+    place-content: center;
+    text-align: center;
+    background-image: url('velas.jpg');
+    background-size: cover;
+    height: 90vh;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.pedido{
+    background-color: pink;
+    height: 90vh;
+    display: none;
+}
+
+.placeholder{
+    height: 10vh;
+    background-color: white;
+}
+
+.next_button, .last_button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 100%;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    display: none;
+}
+
+.next_button{
+    transform: rotate(270deg);
+}
+
+.last_button{
+    transform: rotate(90deg);
+}
+
+.last_button_container, .button_container{
+    position: fixed;
+    left: calc(50% - 20px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.last_button_container{
+    top: calc(10vh + 10px);
+}
+
+.button_container{
+    bottom: 10px;
+}
+
+.--active{
+    display: grid;
+}
